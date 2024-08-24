@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++-12 -std=gnu++20 -O0 -g main.cpp",
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./a.out < test.in",
+        },
+        {
+            "label": "exec",
+            "type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "build",
+                "run"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
