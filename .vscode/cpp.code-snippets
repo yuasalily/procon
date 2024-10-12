@@ -10,8 +10,8 @@
 		"scope": "cpp",
 		"prefix": "input_int",
 		"body": [
-			"int a;",
-			"cin >> a;"
+			"int $1;",
+			"cin >> $1;"
 		],
 		"description": "Input int"
 	}
