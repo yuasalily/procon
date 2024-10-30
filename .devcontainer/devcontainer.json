@@ -6,9 +6,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "llvm-vs-code-extensions.vscode-clangd",
         "christian-kohler.path-intellisense",
-        "vadimcn.vscode-lldb",
-        "ms-vscode.cpptools-extension-pack"
+        "vadimcn.vscode-lldb"
       ],
       "settings": {
         "files.autoSave": "onFocusChange",
@@ -19,14 +19,11 @@
         "editor.bracketPairColorization.enabled": true,
         "editor.copyWithSyntaxHighlighting": false,
         "editor.formatOnSave": true,
-        "editor.inlayHints.enabled": "on",
+        "editor.formatOnSaveMode": "modifications",
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
         "workbench.editor.enablePreview": false,
         "workbench.editor.enablePreviewFromQuickOpen": false,
-        "workbench.tree.renderIndentGuides": "always",
-        "C_Cpp.codeAnalysis.clangTidy.enabled": true,
-        "editor.codeActionsOnSave": {
-          "source.organizeImports": "explicit"
-        }
+        "workbench.tree.renderIndentGuides": "always"
       }
     }
   }
