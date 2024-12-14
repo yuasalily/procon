@@ -22,5 +22,11 @@
 			"for (int $1 = 0; $1 < $2; $1++)"
 		],
 		"description": "rep"
+	},
+	"All":{
+		"scope": "cpp",
+		"prefix": "all",
+		"body": "$1.begin(), $1.end()",
+		"description": "all"
 	}
 }
